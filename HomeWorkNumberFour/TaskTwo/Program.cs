@@ -6,7 +6,18 @@ namespace TaskTwo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int maxValue = 500;
+            while (true)
+            {
+                for (int minValue = 200; minValue < maxValue; minValue++)
+                {
+                    if(minValue % 17 == 0)
+                    {
+                        Console.Write($"{minValue},");
+                    }
+                }
+                break;
+            }
         }
     }
 }
