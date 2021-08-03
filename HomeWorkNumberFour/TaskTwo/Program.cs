@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace TaskTwo
 {
@@ -6,18 +7,18 @@ namespace TaskTwo
     {
         static void Main(string[] args)
         {
+            List<string> strinrNumbers = new List<string>();
             int maxValue = 500;
-            while (true)
-            {
+            
                 for (int minValue = 200; minValue < maxValue; minValue++)
                 {
                     if(minValue % 17 == 0)
                     {
-                        Console.Write($"{minValue},");
+                    strinrNumbers.Add(minValue.ToString());
                     }
                 }
-                break;
-            }
+            string result = string.Join(", ", strinrNumbers);
+            Console.WriteLine(result);
         }
     }
 }
