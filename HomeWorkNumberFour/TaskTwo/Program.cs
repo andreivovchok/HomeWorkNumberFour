@@ -7,18 +7,18 @@ namespace TaskTwo
     {
         static void Main(string[] args)
         {
-            List<string> strinrNumbers = new List<string>();
+            List<string> stringNumbers = new List<string>();
             int maxValue = 500;
             
                 for (int minValue = 200; minValue < maxValue; minValue++)
                 {
                     if(minValue % 17 == 0)
                     {
-                    strinrNumbers.Add(minValue.ToString());
+                    stringNumbers.Add(minValue.ToString());
                     }
                 }
-            string result = string.Join(", ", strinrNumbers);
-            Console.WriteLine(result);
+            string result = string.Join(", ", stringNumbers);
+            Console.Write(result);
         }
     }
 }
