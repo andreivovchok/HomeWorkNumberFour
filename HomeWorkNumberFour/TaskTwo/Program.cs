@@ -9,14 +9,16 @@ namespace TaskTwo
         {
             List<string> stringNumbers = new List<string>();
             int maxValue = 500;
-            
-                for (int minValue = 200; minValue < maxValue; minValue++)
+            int minValue = 200;
+
+            while (minValue < maxValue)
+            {
+                minValue++;
+                if (minValue % 17 == 0)
                 {
-                    if(minValue % 17 == 0)
-                    {
                     stringNumbers.Add(minValue.ToString());
-                    }
                 }
+            }
             string result = string.Join(", ", stringNumbers);
             Console.Write(result);
         }
